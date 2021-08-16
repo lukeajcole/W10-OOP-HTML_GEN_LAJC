@@ -61,12 +61,12 @@ class Manager extends Employee{
       <div class = 'd-flex flex-col '>
         <div class="card m-3" style="width: 18rem;">
           <div class="card-header">
-            ${this.name}
+            Manager: ${this.name}
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">${this.id}</li>
-            <li class="list-group-item"><a href="mailto:${this.email}">${this.email}</a></li>
-            <li class="list-group-item">${this.office}</li>
+            <li class="list-group-item">ID: ${this.id}</li>
+            <li class="list-group-item">EMAIL: <a href="mailto:${this.email}">${this.email}</a></li>
+            <li class="list-group-item">OFFICE: ${this.office}</li>
           </ul>
         </div>
       </div>`
@@ -88,12 +88,12 @@ class Engineer extends Employee{
       `<div class = 'd-flex flex-col '>
         <div class="card m-3" style="width: 18rem;">
           <div class="card-header">
-            ${this.name}
+           Engineer: ${this.name}
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: ${this.id}</li>
             <li class="list-group-item">EMAIL: <a href="mailto:${this.email}">${this.email}</a></li>
-            <li class="list-group-item">GITHUB: <a href="github.com/${this.github}"</a></li>
+            <li class="list-group-item">GITHUB: <a href="https://www.github.com/${this.github}">${this.github}</a></li>
           </ul>
         </div>
       </div>`
@@ -113,11 +113,11 @@ class Intern extends Employee{
       `<div class = 'd-flex flex-col '>
         <div class="card m-3" style="width: 18rem;">
           <div class="card-header">
-            ${this.name}
+            Intern: ${this.name}
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: ${this.id}</li>
-            <li class="list-group-item">EMAIL" <a href="mailto:${this.email}">${this.email}</a></li>
+            <li class="list-group-item">EMAIL: <a href="mailto:${this.email}">${this.email}</a></li>
             <li class="list-group-item">SCHOOL: ${this.school}</li>
           </ul>
         </div>
@@ -168,7 +168,7 @@ function initManager(){
       }
     ])
     .then(val => {
-      manager = new Manager(val.managerId, val.managerEmail, val.managerOffice);
+      manager = new Manager(val.managerName, val.managerId, val.managerEmail, val.managerOffice);
 
       const siteData = {
         teamName: val.teamName,
