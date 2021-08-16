@@ -1,0 +1,26 @@
+{
+  "name": "Develop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeajcole/W10-OOP-HTML_GEN_LAJC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukeajcole/W10-OOP-HTML_GEN_LAJC/issues"
+  },
+  "homepage": "https://github.com/lukeajcole/W10-OOP-HTML_GEN_LAJC#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
