@@ -10,7 +10,6 @@ const Intern = require('./lib/intern');
 const Manager = require('./lib/manager');
 
 const htmlObj = new HTML();
-console.log(htmlObj.htmlLit.length)
 
 class Builder {
   constructor(htmlLit){
@@ -23,7 +22,6 @@ class Builder {
         const newCard = this.siteData.team[i].makeCard()
         cards.push(newCard);
     }
-    console.log(this);
     this.htmlLit[1] = this.siteData.teamName + 'Team Roster';
     this.htmlLit[3] = this.siteData.teamName; 
     this.htmlLit[5] = this.siteData.teamDescription;

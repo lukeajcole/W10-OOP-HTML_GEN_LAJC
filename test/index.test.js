@@ -28,9 +28,9 @@ describe("BUILDER BuildSite", () =>{
             ]
           }
         
-         const build = new Builder();
+         const build = new Builder(html.htmlLit);
          build.siteData = sampleInput;
          build.buildSite();
-       expect(build.htmlLit.length).toBe(10);
+       expect(build.htmlLit.length).toBe(11);
    });    
 });
