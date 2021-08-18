@@ -26,6 +26,9 @@ Run the application in the integrated terminal by typing "node index.js".
 
 Enter information for the team name, team description, and then team manager. From there, select what additional team members to add and fill out their information. When done, select the "All Done!" option.
 
+When done, you should have an HTML file that will generate a page that look like the image below.
+![site demo](./assets/screenshot.PNG)
+
 The demo video below shows the execution of the program:
 
 ![Example GIF](./assets/demo.gif)
